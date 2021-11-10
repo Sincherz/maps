@@ -2,7 +2,7 @@ const express = require("express");
 
 // Initialize the app and create a port
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5962;
 
 
 app.get("/:mysearch", function (req, res) {
@@ -17,8 +17,8 @@ app.get("/:mysearch", function (req, res) {
   res.send(s);
 });
 
-const hostname = "localhost";
-const port = 3000;
+const hostname = "http://flip3.engr.oregonstate.edu:";
+const port = 5962;
 
 // Start the server on the port
 app.listen(PORT, () => console.log(Listening on PORT: ${PORT})); 
